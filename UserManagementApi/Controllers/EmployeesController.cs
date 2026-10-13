@@ -6,12 +6,12 @@ namespace UserManagementApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class UsersController : ControllerBase
+public class EmployeesController : ControllerBase
 {
     private readonly IUserService _userService;
-    private readonly ILogger<UsersController> _logger;
+    private readonly ILogger<EmployeesController> _logger;
 
-    public UsersController(IUserService userService, ILogger<UsersController> logger)
+    public EmployeesController(IUserService userService, ILogger<EmployeesController> logger)
     {
         _userService = userService;
         _logger = logger;

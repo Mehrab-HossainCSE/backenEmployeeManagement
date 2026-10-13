@@ -11,14 +11,14 @@ namespace UserManagementApi.Tests;
 public class UsersControllerTests
 {
     private readonly Mock<IUserService> _mockUserService;
-    private readonly Mock<ILogger<UsersController>> _mockLogger;
-    private readonly UsersController _controller;
+    private readonly Mock<ILogger<EmployeesController>> _mockLogger;
+    private readonly EmployeesController _controller;
 
     public UsersControllerTests()
     {
         _mockUserService = new Mock<IUserService>();
-        _mockLogger = new Mock<ILogger<UsersController>>();
-        _controller = new UsersController(_mockUserService.Object, _mockLogger.Object);
+        _mockLogger = new Mock<ILogger<EmployeesController>>();
+        _controller = new EmployeesController(_mockUserService.Object, _mockLogger.Object);
     }
 
     [Fact]
